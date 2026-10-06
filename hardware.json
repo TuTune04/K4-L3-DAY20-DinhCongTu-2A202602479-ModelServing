@@ -1,0 +1,48 @@
+{
+  "runtime_environment": "local",
+  "cpu": {
+    "arch": "x86_64",
+    "cores_logical": 2,
+    "model": "AMD EPYC 7763 64-Core Processor",
+    "avx2": true,
+    "avx512": false,
+    "neon": false,
+    "cores_physical": 1
+  },
+  "ram_gb": 7.8,
+  "gpu": {
+    "backends": {
+      "nvidia_cuda": false,
+      "amd_rocm": false,
+      "apple_metal": false,
+      "vulkan": false,
+      "cpu_only": true
+    },
+    "details": {}
+  },
+  "platform": {
+    "system": "Linux",
+    "release": "6.8.0-1064-azure",
+    "machine": "x86_64",
+    "python": "3.14.2"
+  },
+  "recommendation": {
+    "recommended_paths": [
+      "01-measure",
+      "02-serve",
+      "03-integrate",
+      "bonus/sweeps"
+    ],
+    "model_key": "qwen35-0.8b",
+    "model_choice_reason": "chosen with LAB_MODEL",
+    "model_label": "Qwen3.5 0.8B",
+    "model_repo": "unsloth/Qwen3.5-0.8B-GGUF",
+    "primary_model_file": "Qwen3.5-0.8B-Q4_K_M.gguf",
+    "compare_model_file": "Qwen3.5-0.8B-UD-Q2_K_XL.gguf",
+    "llama_cpp_backend": "CPU",
+    "llama_cpp_cmake_flag": "",
+    "llama_cpp_build": "b10488",
+    "ram_sufficient": true,
+    "fallback": null
+  }
+}
